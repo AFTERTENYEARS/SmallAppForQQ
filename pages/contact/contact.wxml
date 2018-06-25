@@ -52,7 +52,7 @@
             <text class="contact_cell_title">{{item.groupName}}</text>
             <!-- 人数 -->
             <text class="contact_cell_count">{{item.number}}</text>
-            </view>
+          </view>
 
           <view  class="sep_line" wx:if="{{idx==1}}"></view>
           <view  class="line-narrow"wx:if="{{idx!=1}}" ></view>

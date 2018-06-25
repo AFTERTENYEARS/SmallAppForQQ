@@ -2,6 +2,7 @@
   "pages": [
     "pages/message/message",
     "pages/contact/contact",
+    "pages/dynamic/dynamic",
     "pages/message/chat/chat",
     "pages/message/search/search"
   ],
@@ -28,6 +29,12 @@
       "text": "联系人",
       "iconPath": "images/tab_contact_normal.png",
       "selectedIconPath": "images/tab_contact_selected.png"
+    },
+    {
+      "pagePath": "pages/dynamic/dynamic",
+      "text": "动态",
+      "iconPath": "images/tab_dynamic_normal.png",
+      "selectedIconPath": "images/tab_dynamic_selected.png"
     }
     ]
   }

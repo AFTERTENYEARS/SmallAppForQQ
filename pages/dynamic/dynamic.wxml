@@ -1,0 +1,71 @@
+<!--pages/contact/dynamic.wxml-->
+<view   stytle=" overflow-x: hidden; overflow-y: auto; ">
+
+<view class="serach">
+  <view class="serach_view_show" bindtap="bindtap">
+  搜索
+  </view>
+</view>
+
+<view class="item">
+
+  <!--  好友动态  -->
+    <view class="item_left" bindtap="showToast">
+      <image src="/images/zone.png" class="image"/>
+      <view class="dynamic_item_mark" >
+        <text class="dynamic_item_text">好友动态</text>
+      </view>
+    </view>
+
+    <!--  附近  -->
+    <view class="item_middle" bindtap="showToast">
+      <image src="/images/vicinity.png" class="image"/>
+      <view class="dynamic_item_mark" >
+        <text class="dynamic_item_text">附近</text>
+      </view>
+    </view>
+
+    <!--  兴趣部落  -->
+    <view class="item_right" bindtap="showToast">
+      <image src="/images/tribe.png" class="image"/>
+      <view class="dynamic_item_mark" >
+        <text class="dynamic_item_text">兴趣部落</text>
+      </view>
+    </view>
+
+</view>
+
+<view class="sep_line"></view>
+
+<!--  列表  -->
+
+<view class="dynamic_table">
+
+  <block wx:for="{{message}}">
+
+    <view bindtap="tapRow">
+
+      <view class="dynamic_cell">
+      <!--  图片  -->
+      <image src="{{item.icon}}" class="dynamic_cell_image"></image>
+      <!--  文字  -->
+      <view class="text_view">
+        <text class="dynamic_cell_title">{{item.groupName}}</text>
+      </view>
+      <!--  右箭头  -->
+      <image src="{{item.rightImage}}" class="cell_image_right"/>
+      </view>
+
+      <view  class="sep_line" wx:if="{{index==4}}"></view>
+      <view  class="narrow_line" wx:if="{{index!=4}}"></view>
+
+    </view>
+
+    
+
+  </block>
+
+</view>
+
+
+</view>

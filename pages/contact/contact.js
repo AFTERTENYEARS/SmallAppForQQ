@@ -11,13 +11,13 @@ Page({
 
   tapRow:function (event) {
     wx.showToast({
-      title: "尚未开发",
+      title: "暂未开放",
     })
   },
 
   showToast:function(event) {
     wx.showToast({
-      title: "尚未开发",
+      title: "暂未开放",
     })
   },
 
