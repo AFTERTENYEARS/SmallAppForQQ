@@ -9,7 +9,7 @@
 
 <view class="item">
 
-  <!--  好友动态  -->
+    <!-- 好友  -->
     <view class="item_left" bindtap="showToast">
       <image src="/images/zone.png" class="image"/>
       <view class="dynamic_item_mark" >
